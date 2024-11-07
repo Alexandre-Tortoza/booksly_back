@@ -1,0 +1,46 @@
+.
+├── src
+│   ├── controllers        # Controladores para lidar com as requisições
+│   │   ├── userController.js
+│   │   └── productController.js
+│   │
+│   ├── services           # Lógica de negócios e manipulação de dados
+│   │   ├── userService.js
+│   │   └── productService.js
+│   │
+│   ├── routes             # Definição das rotas da API
+│   │   ├── userRoutes.js
+│   │   └── productRoutes.js
+│   │
+│   ├── models             # Modelos de dados, principalmente usados com ORMs
+│   │   ├── userModel.js
+│   │   └── productModel.js
+│   │
+│   ├── plugins            # Plugins para o Fastify (autenticação, validação, etc.)
+│   │   ├── db.js          # Conexão com banco de dados
+│   │   ├── auth.js        # Configuração de autenticação
+│   │   └── logger.js      # Configuração de logs
+│   │
+│   ├── schemas            # Esquemas de validação e tipos de dados
+│   │   ├── userSchema.js
+│   │   └── productSchema.js
+│   │
+│   ├── config             # Configurações gerais
+│   │   ├── default.js     # Configurações padrão
+│   │   └── production.js  # Configurações para produção
+│   │
+│   ├── utils              # Funções utilitárias para reutilização
+│   │   └── helpers.js
+│   │
+│   ├── index.js           # Ponto de entrada da aplicação (configura o servidor)
+│   └── app.js             # Instância do Fastify e configuração inicial
+│
+├── test                   # Testes unitários e de integração
+│   ├── controllers
+│   ├── services
+│   └── routes
+│
+├── .env                   # Variáveis de ambiente
+├── .gitignore
+├── package.json
+└── README.md
